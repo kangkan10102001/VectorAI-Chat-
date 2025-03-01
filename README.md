@@ -26,9 +26,9 @@ Install DeepSeek API)
 bash
 pip install deepseek  
 
-## **Usage**  
+*Usage 
 
-### **1. Generate Text Embeddings**  
+1. Generate Text Embeddings
 
 python
 from transformers import BertTokenizer, BertModel  
@@ -44,7 +44,7 @@ with torch.no_grad():
 
 embedding = outputs.last_hidden_state.mean(dim=1).squeeze().numpy()  
 
-### **2. Store and Search with FAISS**  
+2. Store and Search with FAISS
 
 python
 import faiss  
